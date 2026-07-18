@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca RAMIANDRISOA | PortFolio SecOps</title>
+    <!-- Tailwind CSS pour un design pro & responsive -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome pour les icônes Tech & Réseaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Styles pour l'effet d'apparition au scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-mono selection:bg-emerald-500 selection:text-slate-900">
+
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-lg font-bold text-emerald-400 tracking-wider font-mono">
+                <span class="text-slate-500">&lt;</span>LUCA.R<span class="text-slate-500">/&gt;</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-slate-400">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">À Propos</a>
+                <a href="#skills" class="hover:text-emerald-400 transition-colors">Compétences</a>
+                <a href="#experience" class="hover:text-emerald-400 transition-colors">Parcours</a>
+                <a href="#projects" class="hover:text-emerald-400 transition-colors">Projets</a>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="border border-emerald-500/30 text-emerald-400 px-4 py-1.5 rounded text-xs uppercase tracking-wider hover:bg-emerald-500/10 transition">
+                [console.log]
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="about" class="min-h-screen flex items-center justify-center pt-20 px-4 relative overflow-hidden bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.08),transparent_45%)]">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-12 items-center">
+            <div class="md:col-span-2 text-left space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs rounded-full uppercase tracking-widest animate-pulse">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Ready to Secure Networks
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight font-sans">
+                    RAMILAVONJY RAMIANDRISOA <br class="hidden md:block">
+                    <span class="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent font-mono text-3xl md:text-5xl block mt-2">
+                        Fy Tianah Luca
+                    </span>
+                </h1>
+                <p class="text-emerald-400 text-lg md:text-xl font-medium uppercase tracking-wider">
+                    Administrateur Systèmes, Réseaux & Cybersécurité
+                </p>
+                <p class="text-slate-400 font-sans leading-relaxed max-w-xl">
+                    Étudiant à l'École Nationale d'Informatique (ENI). Passionné par la sécurité des infrastructures, l'administration avancée des réseaux, la virtualisation et la gestion des écosystèmes Linux/Windows.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#projects" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-3 rounded uppercase tracking-wider text-xs transition shadow-lg shadow-emerald-500/20">
+                        Explorer les Labos
+                    </a>
+                    <a href="cv.pdf" target="_blank" class="border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-300 px-6 py-3 rounded uppercase tracking-wider text-xs transition">
+                        <i class="fas fa-file-pdf mr-2 text-red-400"></i> Télécharger le CV
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative w-64 h-64 md:w-72 md:h-72 group">
+                    <div class="absolute inset-0 border border-emerald-500/20 rounded-full animate-ping pointer-events-none"></div>
+                    <div class="absolute inset-[-8px] border border-dashed border-slate-800 rounded-full"></div>
+                    <img src="avatar.png" alt="Luca Ramiandrisoa" class="w-full h-full object-cover rounded-full border-2 border-emerald-400 grayscale group-hover:grayscale-0 transition duration-500 shadow-2xl shadow-emerald-500/10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPÉTENCES CORE -->
+    <section id="skills" class="py-24 bg-slate-900/40 border-t border-slate-900">
+        <div class="max-w-5xl mx-auto px-4 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold uppercase tracking-widest text-slate-200"># Compétences_Techniques</h2>
+                <p class="text-slate-500 text-xs mt-2 font-sans">Arsenal technologique et certifications pratiques</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Bloc Réseaux -->
+                <div class="bg-slate-900/80 p-6 rounded border border-slate-800 hover:border-emerald-500/40 transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-emerald-500/10 text-emerald-400 rounded"><i class="fas fa-network-wired text-xl"></i></div>
+                        <h3 class="font-bold uppercase tracking-wider text-sm">Réseaux & Commutation</h3>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><i class="fas fa-chevron-right text-emerald-400 mr-2"></i>Routage IP dynamique (RIPv2, OSPF)</li>
+                        <li><i class="fas fa-chevron-right text-emerald-400 mr-2"></i>Segmentation réseau & Sécurité VLAN</li>
+                        <li><i class="fas fa-chevron-right text-emerald-400 mr-2"></i>Simulation d'infrastructures : GNS3</li>
+                        <li><i class="fas fa-chevron-right text-emerald-400 mr-2"></i>Systèmes embarqués & Protocoles Cisco</li>
+                    </ul>
+                </div>
+
+                <!-- Bloc Sécurité -->
+                <div class="bg-slate-900/80 p-6 rounded border border-slate-800 hover:border-emerald-500/40 transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-red-500/10 text-red-400 rounded"><i class="fas fa-shield-halved text-xl"></i></div>
+                        <h3 class="font-bold uppercase tracking-wider text-sm">Cybersécurité Ops</h3>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><i class="fas fa-chevron-right text-red-400 mr-2"></i>Déploiement WIDS avec Suricata</li>
+                        <li><i class="fas fa-chevron-right text-red-400 mr-2"></i>Pare-feu & Filtrage (pfSense)</li>
+                        <li><i class="fas fa-chevron-right text-red-400 mr-2"></i>Confinement réseau & Contrôle NAC</li>
+                        <li><i class="fas fa-chevron-right text-red-400 mr-2"></i>Contrôle d'intégrité (SHA-256)</li>
+                    </ul>
+                </div>
+
+                <!-- Bloc Systèmes & Dev -->
+                <div class="bg-slate-900/80 p-6 rounded border border-slate-800 hover:border-emerald-500/40 transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 bg-blue-500/10 text-blue-400 rounded"><i class="fas fa-terminal text-xl"></i></div>
+                        <h3 class="font-bold uppercase tracking-wider text-sm">Systèmes & Dev Stack</h3>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><i class="fas fa-chevron-right text-blue-400 mr-2"></i>Linux (Ubuntu Server, Debian)</li>
+                        <li><i class="fas fa-chevron-right text-blue-400 mr-2"></i>Windows Server & Active Directory</li>
+                        <li><i class="fas fa-chevron-right text-blue-400 mr-2"></i>Virtualisation : VMware, VirtualBox</li>
+                        <li><i class="fas fa-chevron-right text-blue-400 mr-2"></i>Full-Stack : ReactJS, Django, MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE EXPÉRIENCES & FORMATION -->
+    <section id="experience" class="py-24 max-w-4xl mx-auto px-4 reveal">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl font-bold uppercase tracking-widest text-slate-200"># Parcours_&amp;_Expériences</h2>
+        </div>
+
+        <div class="border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12 relative">
+            <!-- CENI -->
+            <div class="relative pl-8 group">
+                <div class="absolute w-4 h-4 bg-emerald-400 rounded-full -left-[9px] top-1 group-hover:scale-125 transition"></div>
+                <span class="text-xs text-emerald-400 block mb-1">Sept 2025 - Nov 2025</span>
+                <h3 class="text-lg font-bold text-slate-200">Stagiaire en Administration Systèmes et Réseaux - <span class="text-slate-400">CENI Madagascar</span></h3>
+                <p class="text-xs text-slate-500 mt-1 font-sans">Antananarivo</p>
+                <p class="text-sm text-slate-400 mt-2 font-sans">
+                    Conception et déploiement d'une architecture de sécurité réseau contre la propagation de virus. Modélisation de topologies complexes sous **GNS3**, incluant la mise en œuvre d'une solution de détection et de **confinement des postes infectés combinant VLAN segmentés, protocoles NAC et IDS**. Gestion de parcs Windows Server.
+                </p>
+                
+            </div>
+
+            <!-- ENI -->
+            <div class="relative pl-8 group">
+                <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1 group-hover:scale-125 transition"></div>
+                <span class="text-xs text-blue-400 block mb-1">2023 - Présent</span>
+                <h3 class="text-lg font-bold text-slate-200">Licence en Informatique (ASR) - <span class="text-slate-400">ENI Fianarantsoa</span></h3>
+                <p class="text-sm text-slate-400 mt-2 font-sans">
+                    Spécialisation avancée en Administration Systèmes et Réseaux. Apprentissage approfondi de la sécurité des infrastructures réseaux et implémentation de maquettes de routage et de commutation d'entreprise.
+                </p>
+            </div>
+
+            <!-- Spray Info -->
+            <div class="relative pl-8 group">
+                <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-1 group-hover:scale-125 transition"></div>
+                <span class="text-xs text-slate-500 block mb-1">2024 - 2025</span>
+                <h3 class="text-lg font-bold text-slate-200">Formation Réseaux Approfondie - <span class="text-slate-400">Spray Info</span></h3>
+                <p class="text-sm text-slate-400 mt-2 font-sans">
+                    Spécialisation en routage IP avancé, modélisation théorique et pratique des architectures réseaux sur simulateurs technologiques.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LABS ET PROJETS -->
+    <section id="projects" class="py-24 bg-slate-900/20 border-t border-slate-900">
+        <div class="max-w-5xl mx-auto px-4 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl font-bold uppercase tracking-widest text-slate-200"># Projets_&amp;_Labs_Sécurité</h2>
+                <p class="text-slate-500 text-xs mt-2 font-sans">Aperçu des architectures réseaux simulées et du code source</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Lab 1: Confinement & WIDS -->
+                <div class="bg-slate-900 border border-slate-800/80 rounded p-6 hover:border-emerald-500/30 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-widest">[Cyber-defense]</span>
+                            <i class="fab fa-github text-slate-500 text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-slate-200">Confinement Réseau via VLAN & WIDS Suricata</h3>
+                        <p class="text-xs text-slate-400 font-sans leading-relaxed mb-4">
+                            Mise en place d'une infrastructure SecOps de confinement. En cas d'alerte remontée par l'IDS Suricata, le système isole automatiquement la machine compromise dans un **VLAN de quarantaine** dédié. Déploiement sécurisé derrière un pare-feu pfSense et gestion Active Directory.
+                        </p>
+                        <!-- Capture d'écran Projet Confinement -->
+                        <div class="mb-4 overflow-hidden rounded border border-slate-950 bg-slate-950">
+                            <img src="assets/lab_confinement_suricata.png" alt="Maquette d'infrastructure de confinement et IDS" class="w-full h-40 object-cover">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-[10px] text-emerald-400">
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">Suricata</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">pfSense</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">VLAN Isolation</span>
+                    </div>
+                </div>
+
+                <!-- Lab 2: Routage RIPv2 & OSPF (GNS3) -->
+                <div class="bg-slate-900 border border-slate-800/80 rounded p-6 hover:border-emerald-500/30 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">[Routing-Lab]</span>
+                            <i class="fab fa-github text-slate-500 text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-slate-200">Laboratoire d'Interconnexion RIPv2 & OSPF</h3>
+                        <p class="text-xs text-slate-400 font-sans leading-relaxed mb-4">
+                            Maquettage et simulation d'une architecture multi-routeurs Cisco sous **GNS3**. Configuration complète du routage dynamique avec redistribution mutuelle des routes entre les domaines de routage **RIPv2** et **OSPF**, optimisation des métriques et convergence rapide des tables.
+                        </p>
+                        <!-- Capture d'écran Topologie Réseau GNS3 -->
+                        <div class="mb-4 overflow-hidden rounded border border-slate-950 bg-slate-950">
+                            <img src="assets/gns3_rip_ospf_topology.png" alt="Topologie de routage dynamique RIPv2 et OSPF sous GNS3" class="w-full h-40 object-cover">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-[10px] text-amber-400">
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">GNS3</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">OSPF</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">RIPv2</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">Cisco IOS</span>
+                    </div>
+                </div>
+
+                <!-- Lab 3: Supervision -->
+                <div class="bg-slate-900 border border-slate-800/80 rounded p-6 hover:border-emerald-500/30 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">[Infrastructure]</span>
+                            <i class="fab fa-github text-slate-500 text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-slate-200">Supervision Réseau & Monitoring Full-Stack</h3>
+                        <p class="text-xs text-slate-400 font-sans leading-relaxed mb-4">
+                            Développement complet d'une application de supervision en temps réel basée sur ReactJS pour remonter les alertes et vérifier la santé des serveurs critiques.
+                        </p>
+                        <!-- Capture d'écran Supervision -->
+                        <div class="mb-4 overflow-hidden rounded border border-slate-950 bg-slate-950">
+                            <img src="assets/dashboard_monitoring.png" alt="Tableau de bord de supervision" class="w-full h-40 object-cover">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-[10px] text-blue-400">
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">ReactJS</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">Flask/Django</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">API Rest</span>
+                    </div>
+                </div>
+
+                <!-- Lab 4: Cryptography -->
+                <div class="bg-slate-900 border border-slate-800/80 rounded p-6 hover:border-emerald-500/30 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">[Cryptography]</span>
+                            <i class="fab fa-github text-slate-500 text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-slate-200">Vérificateur d'Intégrité SHA-256</h3>
+                        <p class="text-xs text-slate-400 font-sans leading-relaxed mb-4">
+                            Création d'un outil de hachage automatisé pour la détection de modification de fichiers système via signature SHA-256.
+                        </p>
+                        <!-- Capture d'écran Script Sec -->
+                        <div class="mb-4 overflow-hidden rounded border border-slate-950 bg-slate-950">
+                            <img src="assets/integrity_checker_tool.png" alt="Terminal affichant l'outil d'intégrité SHA-256" class="w-full h-40 object-cover">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-[10px] text-purple-400">
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">SHA-256</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">Python</span>
+                        <span class="bg-slate-950 px-2 py-0.5 rounded border border-slate-800">Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 max-w-3xl mx-auto px-4 text-center reveal">
+        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-200 mb-4">// Établir_la_connexion</h2>
+        <p class="text-slate-400 text-sm font-sans mb-8">
+            Disponible pour des projets d'envergure en sécurité ou en gestion d'infrastructure réseaux.
+        </p>
+        
+        <div class="inline-grid sm:grid-cols-2 gap-4 text-left font-sans bg-slate-900 p-6 rounded border border-slate-800 max-w-xl mx-auto w-full">
+            <div class="text-xs text-slate-400 space-y-2">
+                <p><span class="text-emerald-400 font-mono">📍 Localisation :</span> Ankorondrano</p>
+                <p><span class="text-emerald-400 font-mono">📧 Mail :</span> lucasramilavonjy@gmail.com</p>
+                <p><span class="text-emerald-400 font-mono">📞 Tél :</span> +261 38 05 759 33</p>
+            </div>
+            <div class="flex flex-col justify-center gap-3">
+                <a href="https://github.com/LucasRAMIANDRISOA" target="_blank" class="flex items-center gap-2 bg-slate-950 px-4 py-2 text-xs rounded border border-slate-800 hover:text-emerald-400 transition">
+                    <i class="fab fa-github"></i> GitHub Node
+                </a>
+                <a href="https://linkedin.com/in/luca-ramiandrisoa-041b1a3a6" target="_blank" class="flex items-center gap-2 bg-slate-950 px-4 py-2 text-xs rounded border border-slate-800 hover:text-blue-400 transition">
+                    <i class="fab fa-linkedin"></i> LinkedIn Gateway
+                </a>
+            </div>
+        </div>
+        <p class="text-[10px] text-slate-600 mt-16 font-mono">ROOT@LUCA-RAMIANDRISOA:~# ./close_connection.sh</p>
+    </section>
+
+    <!-- LIEN DU SCRIPT JS -->
+    <script src="script.js"></script>
+</body>
+</html>
