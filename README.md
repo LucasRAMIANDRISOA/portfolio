@@ -24,11 +24,3 @@ Bienvenue sur le dépôt de mon portfolio professionnel orienté **Administratio
 Pour cloner et tester ce portfolio localement :
 
 ```bash
-# 1. Cloner le dépôt
-git clone [https://github.com/LucasRAMIANDRISOA/portfolio.git](https://github.com/LucasRAMIANDRISOA/portfolio.git)
-
-# 2. Naviguer dans le dossier
-cd portfolio
-
-# 3. Ouvrir l'index dans votre navigateur (ou utiliser l'extension Live Server)
-open index.html
