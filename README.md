@@ -19,5 +19,5 @@ Bienvenue sur le dépôt de mon portfolio professionnel orienté **Administratio
 2.  **Lab de Routage Dynamique :** Simulation sous GNS3 d'une infrastructure d'entreprise avec redistribution mutuelle de routes entre domaines RIPv2 et OSPF.
 3.  **Dashboard de Supervision :** Application full-stack permettant le monitoring de la santé de serveurs Linux (Debian/Ubuntu) et la remontée d'alertes en temps réel.
 
-![capture 1](capture1.png)
-![capture 2](capture2.png)
+![capture 1](assets/capture1.png)
+![capture 2](assets/capture2.png)
